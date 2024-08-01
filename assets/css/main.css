@@ -1,0 +1,67 @@
+@import "./fonts.css";
+@import "../icons/style.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "proxima-nova";
+    font-weight: 400;
+  }
+
+  [class^="icon-"] {
+    @apply text-2xl leading-6
+  }
+
+  body {
+    @apply bg-gray-100;
+  }
+
+  .lContainer {
+    @apply max-w-[882px] m-auto px-4
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-y-center {
+    @apply flex items-center;
+  }
+
+  .flex-x-center {
+    @apply flex justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .transition-300 {
+    @apply transition duration-300;
+  }
+
+  .hover-red {
+    @apply hover:text-red transition-300
+  }
+
+  .group-red {
+    @apply group-hover:text-red transition-300
+  }
+
+  .group-blue {
+    @apply group-hover:text-blue transition-300
+  }
+
+  .section-title {
+    @apply flex-between mb-5
+  }
+}

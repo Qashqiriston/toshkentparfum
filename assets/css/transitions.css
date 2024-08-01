@@ -1,0 +1,31 @@
+/* modal animation */
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+  transform: scale(1.2);
+}
+.modal-enter-to,
+.modal-leave-from {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal-enter-active,
+.modal-leave-active {
+  transition: 0.2s linear;
+}
+
+/* toast animation */
+.toast-enter-from,
+.toast-leave-to {
+  right: -100%;
+}
+
+.toast-leave-from {
+  right: 26px;
+}
+
+.toast-enter-active,
+.toast-leave-active {
+  transition: all 1s linear;
+}
